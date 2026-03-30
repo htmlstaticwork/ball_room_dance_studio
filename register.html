@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DanceStudio | Register</title>
+  <meta name="description" content="Create your DanceStudio account">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body class="auth-page">
+
+  <button class="btn-icon theme-toggle" aria-label="Toggle dark mode" title="Toggle Theme" style="position: absolute; top: 16px; right: 16px;">🌙</button>
+  <button class="btn-icon rtl-toggle" aria-label="Toggle RTL" title="Toggle RTL" style="position: absolute; top: 16px; right: 56px;">🌍</button>
+
+  <div class="auth-card fade-in-up">
+    <a href="index.html" class="auth-logo">DanceStudio</a>
+    <h2 style="font-size: 1.5rem; margin-bottom: 24px;">Create an Account</h2>
+
+    <form id="register-form" action="dashboard.html">
+      <div class="form-group">
+        <label for="name" class="form-label">Full Name</label>
+        <input type="text" id="name" class="form-control" placeholder="Johanna Doe" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email" class="form-label">Email Address</label>
+        <input type="email" id="email" class="form-control" placeholder="you@example.com" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="password" class="form-label">Password</label>
+        <div class="password-input">
+          <input type="password" id="password" class="form-control" placeholder="••••••••" required>
+          <button type="button" class="btn-eye" aria-label="Toggle password visibility">👁️</button>
+        </div>
+      </div>
+
+      <div class="form-group" style="text-align: left; display: flex; align-items: flex-start; gap: 8px;">
+        <input type="checkbox" id="terms" required style="margin-top: 4px;">
+        <label for="terms" style="font-size: 0.875rem; color: var(--text-muted); line-height: 1.4;">
+          I agree to the <a href="#" style="color: var(--primary);">Terms of Service</a> and <a href="#" style="color: var(--primary);">Privacy Policy</a>.
+        </label>
+      </div>
+
+      <button type="submit" class="btn btn-primary mt-4" style="width: 100%;">Create Account</button>
+    </form>
+
+    <div class="auth-divider">or register with</div>
+
+    <div class="social-auth">
+      <button class="btn-social" aria-label="Login with Google">
+        <span style="font-size: 1.2rem;">G</span> Google
+      </button>
+      <button class="btn-social" aria-label="Login with Apple">
+        <span style="font-size: 1.2rem;">🍎</span> Apple
+      </button>
+      <button class="btn-social" aria-label="Login with Email">
+        <span style="font-size: 1.2rem;">✉️</span> Email
+      </button>
+    </div>
+
+    <p style="margin-top: 24px; font-size: 0.875rem;">
+      Already have an account? <a href="login.html" style="color: var(--primary); font-weight: 600;">Log in</a>
+    </p>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

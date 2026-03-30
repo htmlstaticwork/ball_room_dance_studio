@@ -1,0 +1,147 @@
+/* 1. Base direction */
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="rtl"] .text-center {
+  text-align: center;
+}
+
+/* 2. Navbar RTL */
+[dir="rtl"] .nav-links {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .nav-actions {
+  flex-direction: row-reverse;
+}
+
+/* 3. Hero RTL */
+[dir="rtl"] .hero-content {
+  text-align: right;
+}
+
+/* 4. Cards RTL */
+[dir="rtl"] .card {
+  text-align: right;
+  align-items: flex-start;
+}
+[dir="rtl"] .card-icon {
+  margin-right: 0;
+  margin-left: var(--spacing-4);
+}
+
+[dir="rtl"] .blog-card {
+  text-align: right;
+  align-items: flex-start;
+}
+
+[dir="rtl"] .about-split {
+  direction: rtl;
+}
+
+[dir="rtl"] .event-card {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+[dir="rtl"] .event-date {
+  padding-right: 0;
+  padding-left: var(--spacing-4);
+  border-right: none;
+  border-left: 1px solid var(--border-color);
+  margin-right: 0;
+  margin-left: var(--spacing-4);
+}
+
+/* 5. Footer RTL */
+[dir="rtl"] .footer-grid {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="rtl"] .footer-links a::after {
+  right: 0;
+  left: auto;
+}
+
+/* 6. Social Icons RTL */
+[dir="rtl"] .social-icons {
+  flex-direction: row; /* Usually social icons stay LTR or just flip order */
+}
+
+/* 7. Forms RTL */
+[dir="rtl"] .form-group {
+  text-align: right;
+}
+
+[dir="rtl"] .newsletter-form {
+  flex-direction: row-reverse;
+}
+
+/* 8. Dashboard RTL */
+[dir="rtl"] .dashboard-sidebar {
+  left: auto;
+  right: 0;
+}
+
+[dir="rtl"] .dashboard-main {
+  margin-left: 0;
+  margin-right: 250px;
+}
+
+[dir="rtl"] .sidebar-link i {
+  margin-right: 0;
+  margin-left: var(--spacing-3);
+}
+
+[dir="rtl"] .instructor-card img {
+  margin-right: 0;
+  margin-left: var(--spacing-3);
+}
+
+[dir="rtl"] .user-profile {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .event-filters {
+  flex-direction: row-reverse;
+}
+
+/* 9. Auth RTL */
+[dir="rtl"] .auth-card {
+  text-align: right;
+}
+[dir="rtl"] .btn-eye {
+  right: auto;
+  left: 12px;
+}
+[dir="rtl"] .auth-divider::before { margin-right: 0; margin-left: var(--spacing-3); }
+[dir="rtl"] .auth-divider::after { margin-left: 0; margin-right: var(--spacing-3); }
+
+/* 10. Responsive RTL */
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+  [dir="rtl"] .dashboard-main {
+    margin-right: 0;
+  }
+  [dir="rtl"] .dashboard-sidebar {
+    transform: translateX(100%);
+  }
+  [dir="rtl"] .dashboard-sidebar.open {
+    transform: translateX(0);
+  }
+  [dir="rtl"] .nav-drawer {
+    right: auto;
+    left: -100%;
+  }
+  [dir="rtl"] .nav-drawer.open {
+    left: 0;
+  }
+  [dir="rtl"] .drawer-close {
+    align-self: flex-start;
+  }
+}

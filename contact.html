@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DanceStudio | Contact Us</title>
+  <meta name="description" content="Reach out to DanceStudio to book your lesson or inquire about our programs.">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+
+<body>
+
+  <!-- Drawer Nav -->
+  <div class="drawer-overlay"></div>
+  <nav class="nav-drawer">
+    <button class="drawer-close" aria-label="Close menu">&times;</button>
+    <div class="drawer-links">
+      <a href="index.html">Home</a>
+      <a href="home2.html">Home 2</a>
+      <a href="services.html">Services</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="dashboard.html">Dashboard</a>
+    </div>
+    <div class="drawer-actions">
+      <button class="btn-icon rtl-toggle" aria-label="Toggle RTL">🌍</button>
+      <button class="btn-icon theme-toggle" aria-label="Toggle dark mode">🌙</button>
+      <a href="login.html" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.9rem;">Login</a>
+    </div>
+  </nav>
+
+  <!-- Main Nav -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">DanceStudio</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="home2.html">Home 2</a>
+        <a href="services.html">Services</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="dashboard.html">Dashboard</a>
+      </div>
+      <div class="nav-actions">
+        <button class="btn-icon rtl-toggle" aria-label="Toggle RTL" title="Toggle RTL">🌍</button>
+        <button class="btn-icon theme-toggle" aria-label="Toggle dark mode" title="Toggle Theme">🌙</button>
+        <a href="login.html" class="btn btn-outline" style="padding: 8px 24px;">Login</a>
+      </div>
+      <button class="hamburger" aria-label="Open menu">☰</button>
+    </div>
+  </nav>
+
+  <!-- Section 1: Hero -->
+  <!-- Using 'dance shoes floor' style image for contact hero -->
+  <section class="hero"
+    style="background-image: url('https://images.unsplash.com/photo-1544005313-94ddf0286df2??q=80&w=1920&fit=crop'); min-height: 450px; height: 50vh;">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="fade-in-up" style="transition-delay: 150ms;">Let's Talk Dance</h1>
+        <p class="fade-in-up" style="transition-delay: 300ms;">Ready to take the first step? Our concierge desk is
+          waiting to assist you with scheduling and membership.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Contact Form & Info -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Form Area (Left) -->
+        <div class="fade-in-up"
+          style="background: var(--surface-color); padding: var(--spacing-6); border: 1px solid var(--border-color); border-radius: 8px;">
+          <h2 class="mb-6">Send Us a Message</h2>
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" id="name" class="form-control" placeholder="Johanna Doe">
+              <span class="error-msg" id="name-error">Please enter your full name.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" id="email" class="form-control" placeholder="johanna@example.com">
+              <span class="error-msg" id="email-error">Please enter a valid email address.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="subject" class="form-label">Inquiry Type</label>
+              <select id="subject" class="form-control">
+                <option value="evaluation">Book Evaluation Lesson</option>
+                <option value="wedding">Wedding Dance Prep</option>
+                <option value="competition">Pro-Am Competition</option>
+                <option value="events">Studio Events/Rentals</option>
+                <option value="general">General Inquiry</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Your Message</label>
+              <textarea id="message" class="form-control" placeholder="Tell us about your dance goals..."></textarea>
+              <span class="error-msg" id="message-error">Please enter a message.</span>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 1.1rem; padding: 16px;">Send
+              Message</button>
+          </form>
+        </div>
+
+        <!-- Info Area (Right) -->
+        <div class="fade-in-up" style="transition-delay: 150ms;">
+          <h2 class="mb-6">Contact Information</h2>
+
+          <div class="contact-info-card">
+            <div class="contact-icon">📍</div>
+            <div style="text-align: inherit;">
+              <h4 class="mb-1">Studio Address</h4>
+              <p style="margin: 0;">1204 Premiere Avenue, Suite 300<br>Metropolis, NY 10012</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-icon">📞</div>
+            <div style="text-align: inherit;">
+              <h4 class="mb-1">Phone Line</h4>
+              <p style="margin: 0;">+1 (555) 890-3401<br>Concierge available daily.</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-icon">✉️</div>
+            <div style="text-align: inherit;">
+              <h4 class="mb-1">Email Address</h4>
+              <p style="margin: 0;">bookings@dancestudio.com<br>info@dancestudio.com</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-icon">🕒</div>
+            <div style="text-align: inherit;">
+              <h4 class="mb-1">Opening Hours</h4>
+              <p style="margin: 0;">Mon - Fri: 10:00 AM – 10:00 PM<br>Sat - Sun: 09:00 AM – 8:00 PM</p>
+            </div>
+          </div>
+
+          <!-- Social Icons block -->
+          <div
+            style="margin-top: var(--spacing-6); border-top: 1px solid var(--border-color); padding-top: var(--spacing-6);">
+            <h4 class="mb-4">Follow Our Journey</h4>
+            <div class="social-icons">
+              <a href="#" class="social-icon instagram" aria-label="Instagram">IG</a>
+              <a href="#" class="social-icon facebook" aria-label="Facebook">FB</a>
+              <a href="#" class="social-icon youtube" aria-label="YouTube">YT</a>
+              <a href="#" class="social-icon whatsapp" aria-label="WhatsApp">WA</a>
+              <a href="#" class="social-icon tiktok" aria-label="TikTok">TT</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Full Width Map -->
+  <section class="fade-in-up" style="padding-bottom: var(--spacing-0);">
+    <div class="map-container" style="height: 420px;">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.617424424316!2d-73.99076327655334!3d40.74844047138961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1718000000000!5m2!1sen!2sus"
+        width="100%" height="100%" style="border: 0; position: absolute; top: 0; left: 0;" allowfullscreen=""
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid fade-in-up">
+        <div style="text-align: inherit;">
+          <a href="index.html" class="footer-logo">DanceStudio</a>
+          <p class="footer-desc">Elegance in every step since 2009. Precision technique meets passionate artistry.</p>
+          <div class="social-icons">
+            <a href="#" class="social-icon instagram" aria-label="Instagram">IG</a>
+            <a href="#" class="social-icon facebook" aria-label="Facebook">FB</a>
+            <a href="#" class="social-icon youtube" aria-label="YouTube">YT</a>
+            <a href="#" class="social-icon whatsapp" aria-label="WhatsApp">WA</a>
+            <a href="#" class="social-icon tiktok" aria-label="TikTok">TT</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Studio</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Classes</a></li>
+            <li><a href="home2.html">Instructors</a></li>
+            <li><a href="#">Schedule</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Gift Cards</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Styles</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Waltz</a></li>
+            <li><a href="services.html">Tango</a></li>
+            <li><a href="services.html">Latin</a></li>
+            <li><a href="services.html">Competition</a></li>
+            <li><a href="services.html">Workshops</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <form class="newsletter-form mt-4">
+            <input type="email" class="form-control" placeholder="Email address" required>
+            <button type="submit" class="btn btn-primary" style="padding: 12px 16px;">&rarr;</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom fade-in-up">
+        <p>&copy; 2025 DanceStudio. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

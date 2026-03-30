@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DanceStudio | Student Dashboard</title>
+  <meta name="description" content="Manage your ballroom dance lessons, packages, and social events.">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+
+<body class="dashboard-layout">
+
+  <!-- Desktop Sidebar -->
+  <aside class="dashboard-sidebar">
+    <div class="dashboard-logo">DanceStudio</div>
+    <nav class="sidebar-nav">
+      <div class="sidebar-link active" data-target="book-lessons">
+        <i>📅</i> Book Lessons
+      </div>
+      <div class="sidebar-link" data-target="my-packages">
+        <i>📦</i> My Packages
+      </div>
+      <div class="sidebar-link" data-target="social-events">
+        <i>🎭</i> Social Events
+      </div>
+      <div class="sidebar-link" data-target="my-profile">
+        <i>👤</i> My Profile
+      </div>
+      <div class="sidebar-link" data-target="settings">
+        <i>⚙️</i> Settings
+      </div>
+    </nav>
+    <a href="login.html" class="sidebar-link" style="margin-top: auto;">
+      <i>🚪</i> Logout
+    </a>
+  </aside>
+
+  <!-- Main Content Area -->
+  <main class="dashboard-main">
+
+    <!-- Top Bar -->
+    <header class="dashboard-header">
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <button class="btn Hamburger sidebar-toggle"
+          style="display: none; background: none; border: none; font-size: 1.5rem; cursor: pointer;">☰</button>
+        <h2 style="margin: 0; font-size: 1.25rem;">Student Dashboard</h2>
+      </div>
+      <div class="nav-actions">
+        <button class="btn-icon rtl-toggle" aria-label="Toggle RTL" title="Toggle RTL">🌍</button>
+        <button class="btn-icon theme-toggle" aria-label="Toggle dark mode" title="Toggle Theme">🌙</button>
+      </div>
+    </header>
+
+    <div class="dashboard-content">
+
+      <!-- Welcome Banner -->
+      <div class="db-banner fade-in-up">
+        <div class="banner-text">
+          <h2 style="margin: 0; color: #fff;">Welcome back, Sofia! 👋</h2>
+          <p style="margin: 0; color: rgba(255,255,255,0.8); font-size: 0.95rem;">You're making great progress. Ready
+            for your next lesson?</p>
+        </div>
+        <div class="banner-stats">
+          <div class="stat-item">
+            <span class="stat-val">7</span>
+            <span class="stat-lbl">Lessons Left</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section: Book Private Lessons -->
+      <section id="book-lessons" class="dashboard-section active">
+        <h3 class="mb-6">Book a Private Lesson</h3>
+
+        <div class="grid booking-grid">
+
+          <!-- Calendar Card -->
+          <div class="db-card">
+            <h4>1. Select Date</h4>
+            <div class="calendar-grid">
+              <!-- Calendar days injected by dashboard.js -->
+            </div>
+          </div>
+
+          <!-- Time & Instructor Column -->
+          <div>
+            <div class="db-card mb-4">
+              <h4>2. Available Slots</h4>
+              <div class="time-slots">
+                <div class="time-slot">09:00 AM</div>
+                <div class="time-slot">10:30 AM</div>
+                <div class="time-slot">01:00 PM</div>
+                <div class="time-slot">02:30 PM</div>
+                <div class="time-slot">04:00 PM</div>
+                <div class="time-slot">05:30 PM</div>
+              </div>
+            </div>
+
+            <div class="db-card">
+              <h4>3. Select Instructor</h4>
+              <div class="instructor-list">
+                <div class="instructor-card" data-id="1">
+                  <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=100&fit=crop"
+                    alt="Isabella">
+                  <div>
+                    <h4 style="margin: 0; font-size: 0.9rem;">Isabella Vance</h4>
+                    <span style="font-size: 0.75rem; color: var(--primary);">Standard</span>
+                  </div>
+                </div>
+                <div class="instructor-card" data-id="2">
+                  <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=100&fit=crop"
+                    alt="Marco">
+                  <div>
+                    <h4 style="margin: 0; font-size: 0.9rem;">Marco Delgado</h4>
+                    <span style="font-size: 0.75rem; color: var(--primary);">Latin</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+
+        <!-- Section: My Class Packages -->
+        <section id="my-packages" class="dashboard-section">
+          <h3 class="mb-6">My Class Packages</h3>
+          <div class="grid packages-grid">
+
+            <div class="db-card">
+              <div style="display: flex; justify-content: space-between; margin-bottom: 12px;">
+                <h4 style="margin: 0;">10-Class Bundle</h4>
+                <span class="text-primary" style="font-weight: 600;">7 / 10 used</span>
+              </div>
+              <div class="progress-bar-container">
+                <div class="progress-bar" data-percentage="70%"></div>
+              </div>
+              <p style="font-size: 0.85rem; margin-top: 12px;">Expires: Dec 15, 2025</p>
+              <button class="btn btn-outline" style="width: 100%; margin-top: 16px; padding: 8px;">Buy More
+                Lessons</button>
+            </div>
+
+            <div class="db-card">
+              <div style="display: flex; justify-content: space-between; margin-bottom: 12px;">
+                <h4 style="margin: 0;">Latin Intensive</h4>
+                <span class="text-primary" style="font-weight: 600;">2 / 2 used</span>
+              </div>
+              <div class="progress-bar-container">
+                <div class="progress-bar" data-percentage="100%"></div>
+              </div>
+              <p style="font-size: 0.85rem; margin-top: 12px;">Completed</p>
+              <button class="btn btn-primary" style="width: 100%; margin-top: 16px; padding: 8px;">Renew
+                Package</button>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- Section: Social Dance Events -->
+        <section id="social-events" class="dashboard-section">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+            <h3 style="margin: 0;">Social Dance Events</h3>
+            <div class="event-filters">
+              <button class="filter-btn active" data-filter="all">All</button>
+              <button class="filter-btn" data-filter="upcoming">Upcoming</button>
+              <button class="filter-btn" data-filter="registered">Registered</button>
+            </div>
+          </div>
+
+          <div id="events-list">
+            <!-- Event 1 -->
+            <div class="event-card" data-status="upcoming">
+              <div class="event-date">15<span>OCT</span></div>
+              <div class="event-details flex" style="text-align: inherit;">
+                <h4 style="margin-bottom: 4px;">Autumn Gala Showcase</h4>
+                <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted);">Main Ballroom • 07:30 PM</p>
+              </div>
+              <button class="btn btn-primary toggle-register" style="padding: 8px 16px;">Register</button>
+            </div>
+
+            <!-- Event 2 -->
+            <div class="event-card" data-status="upcoming">
+              <div class="event-date">28<span>OCT</span></div>
+              <div class="event-details flex" style="text-align: inherit;">
+                <h4 style="margin-bottom: 4px;">Beginner Waltz Mixer</h4>
+                <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted);">Studio A • 06:00 PM</p>
+              </div>
+              <button class="btn btn-primary toggle-register" style="padding: 8px 16px;">Register</button>
+            </div>
+
+            <!-- Event 3 -->
+            <div class="event-card" data-status="registered">
+              <div class="event-date">05<span>NOV</span></div>
+              <div class="event-details flex" style="text-align: inherit;">
+                <span class="badge-registered mb-2" style="display: inline-block;">Registered ✓</span>
+                <h4 style="margin-bottom: 4px;">Latin Night Fever</h4>
+                <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted);">Main Ballroom • 08:00 PM</p>
+              </div>
+              <button class="btn btn-outline toggle-register" style="padding: 8px 16px;">Cancel</button>
+            </div>
+
+            <!-- Event 4 -->
+            <div class="event-card" data-status="upcoming">
+              <div class="event-date">12<span>DEC</span></div>
+              <div class="event-details flex" style="text-align: inherit;">
+                <h4 style="margin-bottom: 4px;">Holiday Showcase</h4>
+                <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted);">Grand Theater • 07:00 PM</p>
+              </div>
+              <button class="btn btn-primary toggle-register" style="padding: 8px 16px;">Register</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section: My Profile -->
+        <section id="my-profile" class="dashboard-section">
+          <h3 class="mb-6">My Profile</h3>
+          <div class="db-card" style="max-width: 600px;">
+            <div style="display: flex; gap: 24px; align-items: center; margin-bottom: 32px;">
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=150&fit=crop" alt="Sofia"
+                style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover;">
+              <div>
+                <h4 style="margin: 0;">Sofia Ramirez</h4>
+                <p style="margin: 0; color: var(--primary);">Student Level: Intermediate Latin</p>
+                <button class="btn btn-outline mt-2" style="padding: 4px 12px; font-size: 0.8rem;">Change
+                  Avatar</button>
+              </div>
+            </div>
+            <form>
+              <div class="grid profile-grid">
+                <div class="form-group">
+                  <label class="form-label">First Name</label>
+                  <input type="text" class="form-control" value="Sofia">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Last Name</label>
+                  <input type="text" class="form-control" value="Ramirez">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Email Address</label>
+                <input type="email" class="form-control" value="sofia.r@example.com">
+              </div>
+              <button type="button" class="btn btn-primary mt-4">Save Changes</button>
+            </form>
+          </div>
+        </section>
+
+        <!-- Section: Settings -->
+        <section id="settings" class="dashboard-section">
+          <h3 class="mb-6">Account Settings</h3>
+          <div class="db-card" style="max-width: 600px;">
+            <h4 class="mb-4">Notification Preferences</h4>
+            <div class="form-group" style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+              <input type="checkbox" id="email-notif" checked>
+              <label for="email-notif" style="margin: 0;">Email lesson reminders (24h before)</label>
+            </div>
+            <div class="form-group" style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+              <input type="checkbox" id="sms-notif">
+              <label for="sms-notif" style="margin: 0;">SMS notifications for studio updates</label>
+            </div>
+            <div class="form-group" style="display: flex; align-items: center; gap: 12px;">
+              <input type="checkbox" id="news-notif" checked>
+              <label for="news-notif" style="margin: 0;">Monthly studio newsletter</label>
+            </div>
+
+            <h4 class="mb-4 mt-8">Security</h4>
+            <button class="btn btn-outline" style="width: 100%; text-align: left; padding: 12px 16px;">Change
+              Password</button>
+            <button class="btn btn-outline mt-2"
+              style="width: 100%; text-align: left; padding: 12px 16px; color: #ff4d4f; border-color: #ff4d4f;">Deactivate
+              Account</button>
+          </div>
+        </section>
+
+    </div>
+  </main>
+
+  <!-- Mobile Nav Overlay Support -->
+  <style>
+    @media (max-width: 768px) {
+      .sidebar-toggle {
+        display: block !important;
+      }
+
+      .dashboard-sidebar.open+.dashboard-main {
+        filter: blur(2px);
+        pointer-events: none;
+      }
+    }
+  </style>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/dashboard.js"></script>
+</body>
+
+</html>

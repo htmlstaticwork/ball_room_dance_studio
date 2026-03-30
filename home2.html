@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DanceStudio | Competition & Mastery</title>
+  <meta name="description" content="Luxury ballroom dance academy. Compete. Perform. Captivate.">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+
+<body>
+
+  <!-- Drawer Nav -->
+  <div class="drawer-overlay"></div>
+  <nav class="nav-drawer">
+    <button class="drawer-close" aria-label="Close menu">&times;</button>
+    <div class="drawer-links">
+      <a href="index.html">Home</a>
+      <a href="home2.html">Home 2</a>
+      <a href="services.html">Services</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="dashboard.html">Dashboard</a>
+    </div>
+    <div class="drawer-actions">
+      <button class="btn-icon rtl-toggle" aria-label="Toggle RTL">🌍</button>
+      <button class="btn-icon theme-toggle" aria-label="Toggle dark mode">🌙</button>
+      <a href="login.html" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.9rem;">Login</a>
+    </div>
+  </nav>
+
+  <!-- Main Nav -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">DanceStudio</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="home2.html">Home 2</a>
+        <a href="services.html">Services</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="dashboard.html">Dashboard</a>
+      </div>
+      <div class="nav-actions">
+        <button class="btn-icon rtl-toggle" aria-label="Toggle RTL" title="Toggle RTL">🌍</button>
+        <button class="btn-icon theme-toggle" aria-label="Toggle dark mode" title="Toggle Theme">🌙</button>
+        <a href="login.html" class="btn btn-outline" style="padding: 8px 24px;">Login</a>
+      </div>
+      <button class="hamburger" aria-label="Open menu">☰</button>
+    </div>
+  </nav>
+
+  <!-- Section 1: Hero -->
+  <section class="hero" style="background-image: url('assets/images/home2-hero.png'); min-height: 700px; height: 80vh;">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="fade-in-up" style="transition-delay: 150ms;">Compete. Perform.<br>Captivate.</h1>
+        <p class="fade-in-up" style="transition-delay: 300ms;">The intensive program for dancers aiming towards
+          performance mastery and technical brilliance.</p>
+        <div class="fade-in-up" style="transition-delay: 450ms;">
+          <a href="#instructors" class="btn btn-primary mb-2">Meet Our Champions</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Competition Programs -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="text-center fade-in-up mb-8">
+        <h2 class="text-primary">Competition Programs</h2>
+        <p style="max-width: 600px; margin: 0 auto;">Refined coaching for Pro-Am routines and open competitive
+          divisions.</p>
+      </div>
+      <div class="grid" style="grid-template-columns: repeat(2, 1fr) !important; gap: 32px;">
+
+        <div class="card fade-in-up" style="padding: 0; overflow: hidden;">
+          <img src="assets/images/proam-showcase.png" alt="Pro-Am Showcases" class="card-img">
+          <div
+            style="padding: var(--spacing-6); display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <div class="card-icon">🏆</div>
+            <h3 class="card-title">Pro-Am Showcases</h3>
+            <p>Partner with an elite professional to perform breath-taking choreographies tailored exactly to your
+              strengths.</p>
+          </div>
+        </div>
+
+        <div class="card fade-in-up" style="padding: 0; overflow: hidden; transition-delay: 100ms;">
+          <img src="assets/images/technical-intensive.png" alt="Technical Intensive" class="card-img">
+          <div
+            style="padding: var(--spacing-6); display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <div class="card-icon">⏱️</div>
+            <h3 class="card-title">Technical Intensive</h3>
+            <p>A deep dive into posture, connection, and isolation technique required to dominate the floor.</p>
+          </div>
+        </div>
+
+        <div class="card fade-in-up" style="padding: 0; overflow: hidden;">
+          <img src="assets/images/performance-choreo.png" alt="Performance Choreography" class="card-img">
+          <div
+            style="padding: var(--spacing-6); display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <div class="card-icon">🎬</div>
+            <h3 class="card-title">Performance Choreography</h3>
+            <p>Custom routines blending storytelling and dynamic shapes for exhibitions and bespoke events.</p>
+          </div>
+        </div>
+
+        <div class="card fade-in-up" style="padding: 0; overflow: hidden; transition-delay: 100ms;">
+          <img src="assets/images/national-competition.png" alt="National Competitions" class="card-img">
+          <div
+            style="padding: var(--spacing-6); display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <div class="card-icon">🌍</div>
+            <h3 class="card-title">National Competitions</h3>
+            <p>Travel and compete with the DanceStudio team across prestige championships worldwide.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- Section 3: Instructors -->
+  <section id="instructors" class="section-padding" style="background: rgba(200, 151, 58, 0.05);">
+    <div class="container">
+      <div class="text-center fade-in-up mb-8">
+        <h2 class="text-primary">Master Instructors</h2>
+        <p>Guidance from artists who understand what it takes to win.</p>
+      </div>
+      <div class="grid instructors-grid">
+        <div class="card fade-in-up">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop"
+            alt="Isabella Vance" class="card-img" style="border-radius: 50%; width: 150px; height: 150px;">
+          <h3 class="card-title">Isabella Vance</h3>
+          <span style="color: var(--primary); font-size: 0.9rem; margin-bottom: 8px;">Standard Champion</span>
+          <p>A former national champion bringing unparalleled grace and frame-building expertise to every lesson.</p>
+          <div class="social-icons" style="margin-top: 16px; display: flex; justify-content: center; width: 100%;">
+            <a href="#" class="social-icon instagram" style="width: 32px; height: 32px; font-size: 0.9rem;">IG</a>
+          </div>
+        </div>
+        <div class="card fade-in-up" style="transition-delay: 100ms;">
+          <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=400&auto=format&fit=crop"
+            alt="Marco Delgado" class="card-img" style="border-radius: 50%; width: 150px; height: 150px;">
+          <h3 class="card-title">Marco Delgado</h3>
+          <span style="color: var(--primary); font-size: 0.9rem; margin-bottom: 8px;">Latin Specialist</span>
+          <p>Renowned for dynamic choreography and breaking down complex Cuban motion into clear steps.</p>
+          <div class="social-icons" style="margin-top: 16px; display: flex; justify-content: center; width: 100%;">
+            <a href="#" class="social-icon instagram" style="width: 32px; height: 32px; font-size: 0.9rem;">IG</a>
+          </div>
+        </div>
+        <div class="card fade-in-up" style="transition-delay: 200ms;">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=400&auto=format&fit=crop"
+            alt="Priya Chen" class="card-img" style="border-radius: 50%; width: 150px; height: 150px;">
+          <h3 class="card-title">Priya Chen</h3>
+          <span style="color: var(--primary); font-size: 0.9rem; margin-bottom: 8px;">Social Dance Master</span>
+          <p>Priya builds unstoppable confidence allowing students to lead and follow any partner naturally.</p>
+          <div class="social-icons" style="margin-top: 16px; display: flex; justify-content: center; width: 100%;">
+            <a href="#" class="social-icon instagram" style="width: 32px; height: 32px; font-size: 0.9rem;">IG</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Class Packages -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="text-center fade-in-up mb-8">
+        <h2>Private Class Packages</h2>
+      </div>
+      <div class="grid pricing-grid">
+        <div class="card fade-in-up pricing-card">
+          <h3 class="card-title">Trial Session</h3>
+          <div class="price">$120<span>/lesson</span></div>
+          <p>Perfect to evaluate your level and meet your instructor.</p>
+          <a href="contact.html" class="btn btn-outline" style="width: 100%; margin-top: 16px;">Book Session</a>
+        </div>
+        <div class="card fade-in-up pricing-card popular">
+          <div class="popular-badge">POPULAR</div>
+          <h3 class="card-title">Standard </h3>
+          <div class="price">$950<span>/10 lessons</span></div>
+          <p>Commit to progress with our most selected curriculum track.</p>
+          <a href="contact.html" class="btn btn-primary" style="width: 100%; margin-top: 16px;">Select Package</a>
+        </div>
+        <div class="card fade-in-up pricing-card" style="transition-delay: 100ms;">
+          <h3 class="card-title">Elite </h3>
+          <div class="price">$2400<span>/25+ lessons</span></div>
+          <p>Intensive Pro-Am preparation including choreography design.</p>
+          <a href="contact.html" class="btn btn-outline" style="width: 100%; margin-top: 16px;">Enquire Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: Upcoming Events -->
+  <section class="section-padding" style="background: var(--surface-dark); color: #fff;">
+    <div class="container">
+      <div class="text-center fade-in-up mb-8">
+        <h2 style="color: var(--primary);">Upcoming Socials & Events</h2>
+      </div>
+      <div class="fade-in-up" style="max-width: 800px; margin: 0 auto;">
+
+        <div class="event-card" style="background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.1);">
+          <div class="event-date" style="border-color: rgba(255,255,255,0.15);">
+            15<span>OCT</span>
+          </div>
+          <div class="event-details flex" style="flex: 1; text-align: inherit;">
+            <h4 style="margin-bottom: 4px; color: #fff;">Autumn Gala Showcase</h4>
+            <p style="margin: 0; font-size: 0.9rem; color: rgba(255,255,255,0.6);">Grand Ballroom, 19:30 - Midnight</p>
+          </div>
+          <a href="dashboard.html" class="btn btn-outline"
+            style="padding: 8px 16px; border-color: rgba(255,255,255,0.2); color: #fff;">Reserve</a>
+        </div>
+        <div class="event-card" style="background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.1);">
+          <div class="event-date" style="border-color: rgba(255,255,255,0.15);">
+            28<span>OCT</span>
+          </div>
+          <div class="event-details flex" style="flex: 1; text-align: inherit;">
+            <h4 style="margin-bottom: 4px; color: #fff;">Latin Night Intensive</h4>
+            <p style="margin: 0; font-size: 0.9rem; color: rgba(255,255,255,0.6);">Studio B, 20:00 - 22:30</p>
+          </div>
+          <a href="dashboard.html" class="btn btn-outline"
+            style="padding: 8px 16px; border-color: rgba(255,255,255,0.2); color: #fff;">Reserve</a>
+        </div>
+
+        <div class="event-card" style="background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.1);">
+          <div class="event-date" style="border-color: rgba(255,255,255,0.15);">
+            05<span>NOV</span>
+          </div>
+          <div class="event-details flex" style="flex: 1; text-align: inherit;">
+            <h4 style="margin-bottom: 4px; color: #fff;">Beginner Waltz Mixer</h4>
+            <p style="margin: 0; font-size: 0.9rem; color: rgba(255,255,255,0.6);">Main Floor, 18:00 - 20:00</p>
+          </div>
+          <a href="dashboard.html" class="btn btn-outline"
+            style="padding: 8px 16px; border-color: rgba(255,255,255,0.2); color: #fff;">Reserve</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 6: Gallery Strip -->
+  <section class="gallery-strip">
+    <div class="gallery-item">
+      <img src="assets/images/gallery_tango.png" alt="Ballroom Tango">
+      <div class="gallery-overlay"><i style="font-size: 1.5rem;">❖</i></div>
+    </div>
+    <div class="gallery-item">
+      <img src="assets/images/gallery_waltz.png" alt="Waltz Class">
+      <div class="gallery-overlay"><i style="font-size: 1.5rem;">❖</i></div>
+    </div>
+    <div class="gallery-item">
+      <img src="assets/images/gallery_shoes.png" alt="Dance Shoes">
+      <div class="gallery-overlay"><i style="font-size: 1.5rem;">❖</i></div>
+    </div>
+    <div class="gallery-item">
+      <img src="assets/images/gallery_spin.png" alt="Elegant Spin">
+      <div class="gallery-overlay"><i style="font-size: 1.5rem;">❖</i></div>
+    </div>
+    <div class="gallery-item">
+      <img src="assets/images/gallery_rumba.png" alt="Latin Rumba">
+      <div class="gallery-overlay"><i style="font-size: 1.5rem;">❖</i></div>
+    </div>
+    <div class="gallery-item">
+      <img src="assets/images/gallery_studio.png" alt="Dance Studio">
+      <div class="gallery-overlay"><i style="font-size: 1.5rem;">❖</i></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid fade-in-up">
+        <div style="text-align: inherit;">
+          <a href="index.html" class="footer-logo">DanceStudio</a>
+          <p class="footer-desc">Elegance in every step since 2009. Precision technique meets passionate artistry.</p>
+          <div class="social-icons">
+            <a href="#" class="social-icon instagram" aria-label="Instagram">IG</a>
+            <a href="#" class="social-icon facebook" aria-label="Facebook">FB</a>
+            <a href="#" class="social-icon youtube" aria-label="YouTube">YT</a>
+            <a href="#" class="social-icon whatsapp" aria-label="WhatsApp">WA</a>
+            <a href="#" class="social-icon tiktok" aria-label="TikTok">TT</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Studio</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Classes</a></li>
+            <li><a href="home2.html">Instructors</a></li>
+            <li><a href="#">Schedule</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Gift Cards</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Styles</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Waltz</a></li>
+            <li><a href="services.html">Tango</a></li>
+            <li><a href="services.html">Latin</a></li>
+            <li><a href="services.html">Competition</a></li>
+            <li><a href="services.html">Workshops</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <form class="newsletter-form mt-4">
+            <input type="email" class="form-control" placeholder="Email address" required>
+            <button type="submit" class="btn btn-primary" style="padding: 12px 16px;">&rarr;</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom fade-in-up">
+        <p>&copy; 2025 DanceStudio. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

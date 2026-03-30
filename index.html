@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DanceStudio | Home</title>
+  <meta name="description" content="Luxury ballroom dance academy. Elegance in every step since 2009.">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+
+<body>
+
+  <!-- Drawer Nav -->
+  <div class="drawer-overlay"></div>
+  <nav class="nav-drawer">
+    <button class="drawer-close" aria-label="Close menu">&times;</button>
+    <div class="drawer-links">
+      <a href="index.html">Home</a>
+      <a href="home2.html">Home 2</a>
+      <a href="services.html">Services</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="dashboard.html">Dashboard</a>
+    </div>
+    <div class="drawer-actions">
+      <button class="btn-icon rtl-toggle" aria-label="Toggle RTL">🌍</button>
+      <button class="btn-icon theme-toggle" aria-label="Toggle dark mode">🌙</button>
+      <a href="login.html" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.9rem;">Login</a>
+    </div>
+  </nav>
+
+  <!-- Main Nav -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">DanceStudio</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="home2.html">Home 2</a>
+        <a href="services.html">Services</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="dashboard.html">Dashboard</a>
+      </div>
+      <div class="nav-actions">
+        <button class="btn-icon rtl-toggle" aria-label="Toggle RTL" title="Toggle RTL">🌍</button>
+        <button class="btn-icon theme-toggle" aria-label="Toggle dark mode" title="Toggle Theme">🌙</button>
+        <a href="login.html" class="btn btn-outline" style="padding: 8px 24px;">Login</a>
+      </div>
+      <button class="hamburger" aria-label="Open menu">☰</button>
+    </div>
+  </nav>
+
+  <!-- Section 1: Hero -->
+  <section class="hero"
+    style="background-image: url('https://images.unsplash.com/photo-1547153760-18fc86324498?q=80&w=1920&auto=format&fit=crop');">
+    <canvas id="particles-canvas"></canvas>
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="fade-in-up" style="transition-delay: 150ms;">Where Every Step<br>Tells a Story</h1>
+        <p class="fade-in-up" style="transition-delay: 300ms;">Experience the elegance, drama, and sensual rhythm of
+          luxury ballroom dance. Join us to elevate your passion and perfect your technique.</p>
+        <div class="fade-in-up" style="transition-delay: 450ms;">
+          <a href="services.html" class="btn btn-primary mb-2">Explore Classes</a>
+          <a href="contact.html" class="btn btn-outline" style="border-color: #fff; color: #fff; margin-left: 8px;">Book
+            a Lesson</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Dance Styles -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="text-center fade-in-up mb-8">
+        <h2 class="text-primary">Master Your Style</h2>
+        <p style="max-width: 600px; margin: 0 auto;">Discover our specialized programs designed for absolute beginners
+          to competitive champions.</p>
+      </div>
+      <div class="grid">
+
+        <div class="card fade-in-up" style="padding: 0; overflow: hidden;">
+          <img src="assets/images/waltz.jpg" alt="Waltz" class="card-img">
+          <div
+            style="padding: var(--spacing-6); display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <div class="card-icon">💃</div>
+            <h3 class="card-title">Waltz</h3>
+            <p>The timeless dance of romance, characterized by rising and falling graceful movements.</p>
+          </div>
+        </div>
+
+        <div class="card fade-in-up" style="padding: 0; overflow: hidden; transition-delay: 100ms;">
+          <img src="assets/images/tango.png" alt="Tango" class="card-img">
+          <div
+            style="padding: var(--spacing-6); display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <div class="card-icon">🥀</div>
+            <h3 class="card-title">Tango</h3>
+            <p>A dramatic, passionate dance demanding sharp accents and precise footwork.</p>
+          </div>
+        </div>
+
+        <div class="card fade-in-up" style="padding: 0; overflow: hidden; transition-delay: 200ms;">
+          <img src="assets/images/foxtrot.png" alt="Foxtrot" class="card-img">
+          <div
+            style="padding: var(--spacing-6); display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <div class="card-icon">🎩</div>
+            <h3 class="card-title">Foxtrot</h3>
+            <p>Smooth, continuous flowing movements across the dance floor to big band music.</p>
+          </div>
+        </div>
+
+        <div class="card fade-in-up" style="padding: 0; overflow: hidden;">
+          <img src="assets/images/quickstep.png" alt="Quickstep" class="card-img">
+          <div
+            style="padding: var(--spacing-6); display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <div class="card-icon">⚡</div>
+            <h3 class="card-title">Quickstep</h3>
+            <p>Light, fast, and powerfully dynamic, combining runs, hops, and syncopated steps.</p>
+          </div>
+        </div>
+
+        <div class="card fade-in-up" style="padding: 0; overflow: hidden; transition-delay: 100ms;">
+          <img src="assets/images/viennese-waltz.png" alt="Viennese Waltz" class="card-img">
+          <div
+            style="padding: var(--spacing-6); display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <div class="card-icon">👑</div>
+            <h3 class="card-title">Viennese Waltz</h3>
+            <p>The original, fast-paced waltz featuring continuous elegant rotations.</p>
+          </div>
+        </div>
+
+        <div class="card fade-in-up" style="padding: 0; overflow: hidden; transition-delay: 200ms;">
+          <img src="assets/images/cha-cha.png" alt="Cha-Cha" class="card-img">
+          <div
+            style="padding: var(--spacing-6); display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <div class="card-icon">🌶️</div>
+            <h3 class="card-title">Cha-Cha</h3>
+            <p>Flirtatious, playful, and energetic Latin rhythm focusing on Cuban motion.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- Section 3: About -->
+  <section class="section-padding" style="background: rgba(200, 151, 58, 0.03);">
+    <div class="container">
+      <div class="about-split">
+        <div class="fade-in-up">
+          <img src="assets/images/home1about.png" alt="Dance Studio" class="about-img">
+        </div>
+        <div class="fade-in-up">
+          <h2 class="text-primary mb-4">A Legacy of Elegance</h2>
+          <p>Since 2009, DanceStudio has refined the art of ballroom dancing. Our exquisite jewel-toned studios provide
+            the perfect backdrop for your dance journey, blending classical instruction with modern passion.</p>
+          <p class="mb-6">Whether you seek social confidence, wedding preparation, or competitive excellence, our
+            world-class instructors guide you through every syncopation with personalized care.</p>
+          <a href="home2.html" class="btn btn-outline">Meet Our Team</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: 
+  <section class="section-padding">
+    <div class="container">
+      <div class="text-center fade-in-up mb-8">
+        <h2>The DanceStudio Difference</h2>
+      </div>
+      <div class="grid" style="grid-template-columns: repeat(2, 1fr) !important;">
+        <div class="card fade-in-up">
+          <h4 class="mb-2">World-Class Instructors</h4>
+          <p>Learn directly from former champions and certified dance masters.</p>
+        </div>
+        <div class="card fade-in-up" style="transition-delay: 100ms;">
+          <h4 class="mb-2">Luxury Facilities</h4>
+          <p>Suspended sprung floors, high ceilings, and beautiful atmospheric lighting.</p>
+        </div>
+        <div class="card fade-in-up">
+          <h4 class="mb-2">Tailored Curriculum</h4>
+          <p>Private lessons meticulously customized to your learning pace and goals.</p>
+        </div>
+        <div class="card fade-in-up" style="transition-delay: 100ms;">
+          <h4 class="mb-2">Vibrant Community</h4>
+          <p>Join our exclusive social events, galas, and intensive workshops.</p>
+        </div>
+      </div>
+    </div>
+  </section> Why Choose Us -->
+
+  <!-- Section 5: Testimonials -->
+  <section class="section-padding" style="background: rgba(200, 151, 58, 0.05);">
+    <div class="container">
+      <div class="text-center fade-in-up mb-8">
+        <h2 class="text-primary">Hear from Our Dancers</h2>
+      </div>
+      <div class="grid testimonials-grid">
+        <div class="card fade-in-up">
+          <p class="mb-4" style="font-style: italic;">"The instructors transformed my posture and confidence. Every
+            lesson feels like stepping into a cinematic masterpiece."</p>
+          <h5 class="mb-1">— Sofia Ramirez</h5>
+          <span style="font-size: 0.8rem; color: var(--primary);">Advanced Latin</span>
+        </div>
+        <div class="card fade-in-up" style="transition-delay: 100ms;">
+          <p class="mb-4" style="font-style: italic;">"We initially came just for our wedding dance but fell in love
+            with the community. It's now our favorite weekly ritual."</p>
+          <h5 class="mb-1">— James & Priya Chen</h5>
+          <span style="font-size: 0.8rem; color: var(--primary);">Social Bronze</span>
+        </div>
+        <div class="card fade-in-up" style="transition-delay: 200ms;">
+          <p class="mb-4" style="font-style: italic;">"The technical precision taught here is unmatched. They pushed me
+            to reach the competition finals."</p>
+          <h5 class="mb-1">— David Okonkwo</h5>
+          <span style="font-size: 0.8rem; color: var(--primary);">Competitive Standard</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 6: CTA Banner -->
+  <section class="cta-banner fade-in-up">
+    <div class="container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+      <h2>Begin Your Dance Journey Today</h2>
+      <p class="mb-6" style="max-width: 500px; color: rgba(255,255,255,0.9);">Step onto the floor and experience
+        the luxury of movement.</p>
+      <a href="pricing.html" class="btn" style="background: var(--secondary); color: #fff;">View Packages</a>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid fade-in-up">
+        <div style="text-align: inherit;">
+          <a href="index.html" class="footer-logo">DanceStudio</a>
+          <p class="footer-desc">Elegance in every step since 2009. Precision technique meets passionate artistry.</p>
+          <div class="social-icons">
+            <a href="#" class="social-icon instagram" aria-label="Instagram">IG</a>
+            <a href="#" class="social-icon facebook" aria-label="Facebook">FB</a>
+            <a href="#" class="social-icon youtube" aria-label="YouTube">YT</a>
+            <a href="#" class="social-icon whatsapp" aria-label="WhatsApp">WA</a>
+            <a href="#" class="social-icon tiktok" aria-label="TikTok">TT</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Studio</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Classes</a></li>
+            <li><a href="home2.html">Instructors</a></li>
+            <li><a href="#">Schedule</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Gift Cards</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Styles</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Waltz</a></li>
+            <li><a href="services.html">Tango</a></li>
+            <li><a href="services.html">Latin</a></li>
+            <li><a href="services.html">Competition</a></li>
+            <li><a href="services.html">Workshops</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <form class="newsletter-form mt-4">
+            <input type="email" class="form-control" placeholder="Email address" required>
+            <button type="submit" class="btn btn-primary" style="padding: 12px 16px;">&rarr;</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom fade-in-up">
+        <p>&copy; 2025 DanceStudio. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
