@@ -234,7 +234,28 @@ const initFormValidation = () => {
   }
 };
 
-/* 7. Init */
+/* 7. Back to Top */
+const initBackToTop = () => {
+  const btn = document.querySelector('.back-to-top');
+  if (!btn) return;
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      btn.classList.add('visible');
+    } else {
+      btn.classList.remove('visible');
+    }
+  });
+
+  btn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+};
+
+/* 8. Init */
 document.addEventListener('DOMContentLoaded', () => {
   initTheme();
   initRTL();
@@ -242,4 +263,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initAnimations();
   initParticles();
   initFormValidation();
+  initBackToTop();
 });

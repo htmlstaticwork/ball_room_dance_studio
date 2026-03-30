@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" data-theme="light">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DanceStudio | Login</title>
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
   <meta name="description" content="Login to your DanceStudio account">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="assets/css/rtl.css">
 </head>
+
 <body class="auth-page">
 
   <!-- Auth Theme/RTL Controls (Simplified) -->
@@ -20,15 +24,17 @@
   </div>
 
   <div class="auth-card fade-in-up">
-    <a href="index.html" class="auth-logo">DanceStudio</a>
-    <h2 style="font-size: 1.5rem; margin-bottom: 24px;">Welcome back</h2>
+    <a href="index.html" class="logo" style="display: flex; justify-content: center; margin-bottom: 24px;">
+      <img src="assets/images/logo.svg" alt="DanceStudio" style="height: 36px; width: auto;">
+    </a>
+    <h3 style="font-size: 1.5rem; margin-bottom: 24px;">Welcome back</h3>
 
     <form id="register-form" action="dashboard.html">
       <div class="form-group">
         <label for="email" class="form-label">Email Address</label>
         <input type="email" id="email" class="form-control" placeholder="you@example.com" required>
       </div>
-      
+
       <div class="form-group">
         <label for="password" class="form-label">Password</label>
         <div class="password-input">
@@ -38,7 +44,8 @@
         <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 12px;">
           <div style="display: flex; align-items: center; gap: 8px;">
             <input type="checkbox" id="remember" style="width: 16px; height: 16px; cursor: pointer;">
-            <label for="remember" style="font-size: 0.875rem; color: var(--text-muted); cursor: pointer;">Remember me</label>
+            <label for="remember" style="font-size: 0.875rem; color: var(--text-muted); cursor: pointer;">Remember
+              me</label>
           </div>
           <a href="#" style="font-size: 0.8rem; color: var(--primary); font-weight: 600;">Forgot Password?</a>
         </div>
@@ -65,4 +72,5 @@
 
   <script src="assets/js/main.js"></script>
 </body>
+
 </html>
