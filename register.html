@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" data-theme="light">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DanceStudio | Register</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
   <meta name="description" content="Create your DanceStudio account">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="assets/css/rtl.css">
 </head>
+
 <body class="auth-page">
 
-  <button class="btn-icon theme-toggle" aria-label="Toggle dark mode" title="Toggle Theme" style="position: absolute; top: 16px; right: 16px;">🌙</button>
-  <button class="btn-icon rtl-toggle" aria-label="Toggle RTL" title="Toggle RTL" style="position: absolute; top: 16px; right: 56px;">🌍</button>
+  <!-- Auth Theme/RTL Controls (Simplified) -->
+  <div style="position: fixed; top: 24px; right: 24px; display: flex; gap: 12px; z-index: 1000;">
+    <button class="btn-icon rtl-toggle" aria-label="Toggle RTL" title="Toggle RTL">🌍</button>
+    <button class="btn-icon theme-toggle" aria-label="Toggle dark mode" title="Toggle Theme">🌙</button>
+  </div>
 
   <div class="auth-card fade-in-up">
     <a href="index.html" class="auth-logo">DanceStudio</a>
@@ -28,7 +37,7 @@
         <label for="email" class="form-label">Email Address</label>
         <input type="email" id="email" class="form-control" placeholder="you@example.com" required>
       </div>
-      
+
       <div class="form-group">
         <label for="password" class="form-label">Password</label>
         <div class="password-input">
@@ -40,7 +49,8 @@
       <div class="form-group" style="text-align: left; display: flex; align-items: flex-start; gap: 8px;">
         <input type="checkbox" id="terms" required style="margin-top: 4px;">
         <label for="terms" style="font-size: 0.875rem; color: var(--text-muted); line-height: 1.4;">
-          I agree to the <a href="#" style="color: var(--primary);">Terms of Service</a> and <a href="#" style="color: var(--primary);">Privacy Policy</a>.
+          I agree to the <a href="#" style="color: var(--primary);">Terms of Service</a> and <a href="#"
+            style="color: var(--primary);">Privacy Policy</a>.
         </label>
       </div>
 
@@ -49,16 +59,14 @@
 
     <div class="auth-divider">or register with</div>
 
-    <div class="social-auth">
+    <div class="social-auth" style="grid-template-columns: repeat(3, 1fr);">
       <button class="btn-social" aria-label="Login with Google">
-        <span style="font-size: 1.2rem;">G</span> Google
+        <i class="fab fa-google" style="color: #DB4437;"></i> Google
       </button>
       <button class="btn-social" aria-label="Login with Apple">
-        <span style="font-size: 1.2rem;">🍎</span> Apple
+        <i class="fab fa-apple"></i> Apple
       </button>
-      <button class="btn-social" aria-label="Login with Email">
-        <span style="font-size: 1.2rem;">✉️</span> Email
-      </button>
+
     </div>
 
     <p style="margin-top: 24px; font-size: 0.875rem;">
@@ -68,4 +76,5 @@
 
   <script src="assets/js/main.js"></script>
 </body>
+
 </html>

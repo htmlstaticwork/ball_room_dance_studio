@@ -135,13 +135,14 @@
     transform: translateX(0);
   }
   [dir="rtl"] .nav-drawer {
-    right: auto;
     left: -100%;
+    right: auto;
+    transition: left 0.3s ease;
   }
   [dir="rtl"] .nav-drawer.open {
     left: 0;
   }
   [dir="rtl"] .drawer-close {
-    align-self: flex-start;
+    align-self: flex-end;
   }
 }

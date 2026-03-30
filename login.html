@@ -4,15 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DanceStudio | Login</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
   <meta name="description" content="Login to your DanceStudio account">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="assets/css/rtl.css">
 </head>
 <body class="auth-page">
 
-  <button class="btn-icon theme-toggle" aria-label="Toggle dark mode" title="Toggle Theme" style="position: absolute; top: 16px; right: 16px;">🌙</button>
-  <button class="btn-icon rtl-toggle" aria-label="Toggle RTL" title="Toggle RTL" style="position: absolute; top: 16px; right: 56px;">🌍</button>
+  <!-- Auth Theme/RTL Controls (Simplified) -->
+  <div style="position: fixed; top: 24px; right: 24px; display: flex; gap: 12px; z-index: 1000;">
+    <button class="btn-icon rtl-toggle" aria-label="Toggle RTL" title="Toggle RTL">🌍</button>
+    <button class="btn-icon theme-toggle" aria-label="Toggle dark mode" title="Toggle Theme">🌙</button>
+  </div>
 
   <div class="auth-card fade-in-up">
     <a href="index.html" class="auth-logo">DanceStudio</a>
@@ -25,13 +30,17 @@
       </div>
       
       <div class="form-group">
-        <label for="password" class="form-label" style="display: flex; justify-content: space-between;">
-          Password
-          <a href="#" style="font-size: 0.8rem; color: var(--primary);">Forgot?</a>
-        </label>
+        <label for="password" class="form-label">Password</label>
         <div class="password-input">
           <input type="password" id="password" class="form-control" placeholder="••••••••" required>
           <button type="button" class="btn-eye" aria-label="Toggle password visibility">👁️</button>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 12px;">
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <input type="checkbox" id="remember" style="width: 16px; height: 16px; cursor: pointer;">
+            <label for="remember" style="font-size: 0.875rem; color: var(--text-muted); cursor: pointer;">Remember me</label>
+          </div>
+          <a href="#" style="font-size: 0.8rem; color: var(--primary); font-weight: 600;">Forgot Password?</a>
         </div>
       </div>
 
@@ -42,10 +51,10 @@
 
     <div class="social-auth">
       <button class="btn-social" aria-label="Login with Google">
-        <span style="font-size: 1.2rem;">G</span> Google
+        <i class="fab fa-google" style="color: #DB4437;"></i> Google
       </button>
       <button class="btn-social" aria-label="Login with Apple">
-        <span style="font-size: 1.2rem;">🍎</span> Apple
+        <i class="fab fa-apple"></i> Apple
       </button>
     </div>
 
