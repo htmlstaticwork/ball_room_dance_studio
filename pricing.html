@@ -10,6 +10,25 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="assets/css/rtl.css">
+  <style>
+    /* Specific adjustment for Pricing Page Tablet View (768px) */
+    @media (min-width: 601px) and (max-width: 1024px) {
+      .pricing-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        display: grid !important;
+      }
+      .pricing-grid .card {
+        grid-column: span 1 !important;
+      }
+      .pricing-grid .card:nth-child(3) {
+        grid-column: 1 / span 2 !important;
+        justify-self: center !important;
+        width: 100% !important;
+        /* Matches exactly the width of the cards in the 2-column grid above */
+        max-width: calc(50% - var(--spacing-4)) !important; 
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -21,6 +40,7 @@
       <a href="index.html">Home</a>
       <a href="home2.html">Home 2</a>
       <a href="services.html">Services</a>
+      <a href="pricing.html" class="active">Pricing</a>
       <a href="blog.html">Blog</a>
       <a href="contact.html">Contact</a>
     </div>
@@ -44,6 +64,7 @@
         <a href="index.html">Home</a>
         <a href="home2.html">Home 2</a>
         <a href="services.html">Services</a>
+        <a href="pricing.html" class="active">Pricing</a>
         <a href="blog.html">Blog</a>
         <a href="contact.html">Contact</a>
       </div>
@@ -73,7 +94,7 @@
       <div class="text-center fade-in-up mb-8">
         <h2>Private Class Packages</h2>
       </div>
-      <div class="grid">
+      <div class="grid pricing-grid">
         
         <div class="card fade-in-up pricing-card">
           <h3 class="card-title">Trial Session</h3>
