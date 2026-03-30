@@ -5,18 +5,30 @@ const toggleTheme = () => {
   const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
   html.setAttribute('data-theme', newTheme);
   localStorage.setItem('theme', newTheme);
+
+  // Update icons
+  const themeBtns = document.querySelectorAll('.theme-toggle');
+  themeBtns.forEach(btn => {
+    btn.textContent = newTheme === 'dark' ? '🌙' : '☀️';
+  });
 };
 
 const initTheme = () => {
   const savedTheme = localStorage.getItem('theme');
+  let currentTheme = 'light';
   if (savedTheme) {
+    currentTheme = savedTheme;
     document.documentElement.setAttribute('data-theme', savedTheme);
   } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    currentTheme = 'dark';
     document.documentElement.setAttribute('data-theme', 'dark');
   }
   
   const themeBtns = document.querySelectorAll('.theme-toggle');
-  themeBtns.forEach(btn => btn.addEventListener('click', toggleTheme));
+  themeBtns.forEach(btn => {
+    btn.textContent = currentTheme === 'dark' ? '🌙' : '☀️';
+    btn.addEventListener('click', toggleTheme);
+  });
 };
 
 /* 2. RTL Toggle */

@@ -24,8 +24,8 @@
   </div>
 
   <div class="auth-card fade-in-up">
-    <a href="index.html" class="logo" style="display: flex; justify-content: center; margin-bottom: 24px;">
-      <img src="assets/images/logo.svg" alt="DanceStudio" style="height: 36px; width: auto;">
+    <a href="index.html" class="logo" style="display: flex; justify-content: center; margin-bottom: 24px; width: 100%;">
+      <img src="assets/images/logo.svg" alt="DanceStudio" style="height: 36px; width: auto; margin-left: 35px;">
     </a>
     <h3 style="font-size: 1rem; margin-bottom: 24px;">Welcome back Dancer</h3>
 
@@ -41,13 +41,15 @@
           <input type="password" id="password" class="form-control" placeholder="••••••••" required>
           <button type="button" class="btn-eye" aria-label="Toggle password visibility">👁️</button>
         </div>
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 12px;">
-          <div style="display: flex; align-items: center; gap: 8px;">
+        <div class="auth-options"
+          style="display: flex; justify-content: space-between; align-items: center; margin-top: 12px;">
+          <div style="display: flex; align-items: center; gap: 8px; white-space: nowrap;">
             <input type="checkbox" id="remember" style="width: 16px; height: 16px; cursor: pointer;">
             <label for="remember" style="font-size: 0.875rem; color: var(--text-muted); cursor: pointer;">Remember
               me</label>
           </div>
-          <a href="#" style="font-size: 0.8rem; color: var(--primary); font-weight: 600;">Forgot Password?</a>
+          <a href="#" style="font-size: 0.8rem; color: var(--primary); font-weight: 600; white-space: nowrap;">Forgot
+            Password?</a>
         </div>
       </div>
 
