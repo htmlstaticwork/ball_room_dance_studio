@@ -989,6 +989,39 @@ textarea.form-control {
   cursor: pointer;
 }
 
+.auth-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.remember-me input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.remember-me label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.forgot-password {
+  font-size: 0.75rem;
+  color: var(--primary);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
 /* 21. Dashboard */
 .dashboard-layout {
   display: flex;
@@ -1580,6 +1613,20 @@ textarea.form-control {
 }
 
 @media (max-width: 360px) {
+  .auth-card {
+    padding: var(--spacing-5); /* Reducing padding to 24px */
+  }
+
+  .auth-options {
+    flex-direction: row; /* Ensure they stay on a single line */
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .remember-me, .forgot-password {
+    white-space: nowrap; /* Prevent wrapping */
+  }
+
   .grid {
     grid-template-columns: 1fr;
   }
