@@ -1099,7 +1099,8 @@ textarea.form-control {
   z-index: 90;
 }
 
-.dashboard-header .hamburger {
+.dashboard-header .hamburger,
+.dashboard-header .nav-actions {
   color: var(--text-color);
 }
 

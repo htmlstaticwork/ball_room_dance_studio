@@ -9,7 +9,7 @@ const toggleTheme = () => {
   // Update icons
   const themeBtns = document.querySelectorAll('.theme-toggle');
   themeBtns.forEach(btn => {
-    btn.textContent = newTheme === 'dark' ? '🌙' : '☀️';
+    btn.innerHTML = newTheme === 'dark' ? '<i class="fa-solid fa-moon"></i>' : '<i class="fa-solid fa-sun"></i>';
   });
 };
 
@@ -26,7 +26,7 @@ const initTheme = () => {
   
   const themeBtns = document.querySelectorAll('.theme-toggle');
   themeBtns.forEach(btn => {
-    btn.textContent = currentTheme === 'dark' ? '🌙' : '☀️';
+    btn.innerHTML = currentTheme === 'dark' ? '<i class="fa-solid fa-moon"></i>' : '<i class="fa-solid fa-sun"></i>';
     btn.addEventListener('click', toggleTheme);
   });
 };
@@ -47,7 +47,10 @@ const initRTL = () => {
   }
   
   const rtlBtns = document.querySelectorAll('.rtl-toggle');
-  rtlBtns.forEach(btn => btn.addEventListener('click', toggleRTL));
+  rtlBtns.forEach(btn => {
+    btn.innerHTML = '<i class="fa-solid fa-right-left"></i>';
+    btn.addEventListener('click', toggleRTL);
+  });
 };
 
 /* 3. Navbar */
@@ -236,10 +239,10 @@ const initFormValidation = () => {
       eyeBtn.addEventListener('click', () => {
         if (passwordInput.type === 'password') {
           passwordInput.type = 'text';
-          eyeBtn.textContent = '🙈';
+          eyeBtn.innerHTML = '<i class="fa-solid fa-eye-slash"></i>';
         } else {
           passwordInput.type = 'password';
-          eyeBtn.textContent = '👁️';
+          eyeBtn.innerHTML = '<i class="fa-solid fa-eye"></i>';
         }
       });
     }

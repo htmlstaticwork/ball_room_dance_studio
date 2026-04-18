@@ -182,7 +182,7 @@ const initEventRegistration = () => {
         const newBadge = document.createElement('span');
         newBadge.className = 'badge-registered mb-2';
         newBadge.style.display = 'inline-block';
-        newBadge.textContent = 'Registered ✓';
+        newBadge.innerHTML = 'Registered <i class="fa-solid fa-check"></i>';
         
         const details = card.querySelector('.event-details');
         details.insertBefore(newBadge, details.firstChild);
