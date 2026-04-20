@@ -24,6 +24,7 @@
     <div class="drawer-links">
       <a href="index.html" class="active">Home</a>
       <a href="home2.html">Home 2</a>
+      <a href="about.html">About</a>
       <a href="services.html">Services</a>
       <a href="pricing.html">Pricing</a>
       <a href="blog.html">Blog</a>
@@ -31,8 +32,10 @@
     </div>
     <div class="drawer-actions">
       <div class="drawer-toggles">
-        <button class="btn-icon rtl-toggle" aria-label="Toggle RTL" title="Toggle RTL"><i class="fa-solid fa-right-left"></i></button>
-        <button class="btn-icon theme-toggle" aria-label="Toggle dark mode" title="Toggle Theme"><i class="fa-solid fa-moon"></i></button>
+        <button class="btn-icon rtl-toggle" aria-label="Toggle RTL" title="Toggle RTL"><i
+            class="fa-solid fa-right-left"></i></button>
+        <button class="btn-icon theme-toggle" aria-label="Toggle dark mode" title="Toggle Theme"><i
+            class="fa-solid fa-moon"></i></button>
       </div>
       <a href="login.html" class="btn btn-outline" style="padding: 8px 24px;">Sign Up</a>
       <a href="dashboard.html" class="btn btn-primary" style="padding: 8px 24px;">Dashboard</a>
@@ -48,6 +51,7 @@
       <div class="nav-links">
         <a href="index.html" class="active">Home</a>
         <a href="home2.html">Home 2</a>
+        <a href="about.html">About</a>
         <a href="services.html">Services</a>
         <a href="pricing.html">Pricing</a>
         <a href="blog.html">Blog</a>
@@ -56,19 +60,25 @@
       <div class="nav-actions">
         <a href="login.html" class="btn btn-outline" style="padding: 8px 24px;">Sign Up</a>
         <a href="dashboard.html" class="btn btn-primary" style="padding: 8px 24px;">Dashboard</a>
-        <button class="btn-icon rtl-toggle" aria-label="Toggle RTL" title="Toggle RTL"><i class="fa-solid fa-right-left"></i></button>
-        <button class="btn-icon theme-toggle" aria-label="Toggle dark mode" title="Toggle Theme"><i class="fa-solid fa-moon"></i></button>
+        <button class="btn-icon rtl-toggle" aria-label="Toggle RTL" title="Toggle RTL"><i
+            class="fa-solid fa-right-left"></i></button>
+        <button class="btn-icon theme-toggle" aria-label="Toggle dark mode" title="Toggle Theme"><i
+            class="fa-solid fa-moon"></i></button>
       </div>
       <button class="hamburger" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
     </div>
   </nav>
 
-  <!-- Section 1: Hero -->
-  <section class="hero"
-    style="background-image: url('https://images.unsplash.com/photo-1547153760-18fc86324498?q=80&w=1920&auto=format&fit=crop');">
+  <section class="hero" id="main-hero" style="
+  background-image: url('assets/images/new-hero.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-color: #0e0e1c;
+">
     <canvas id="particles-canvas"></canvas>
-    <div class="container">
-      <div class="hero-content">
+    <div class="container" style="width: 100%;">
+      <div class="hero-content" style="margin: 0 auto; text-align: center; max-width: 600px;">
         <h1 class="fade-in-up" style="transition-delay: 150ms;">Where Every Step<br>Tells a Story</h1>
         <p class="fade-in-up" style="transition-delay: 300ms;">Experience the elegance, drama, and sensual rhythm of
           luxury ballroom dance. Join us to elevate your passion and perfect your technique.</p>
@@ -80,6 +90,38 @@
       </div>
     </div>
   </section>
+
+  <style>
+    #main-hero {
+      height: 100vh;
+      min-height: 600px;
+    }
+
+    @media (max-width: 1024px) {
+      #main-hero {
+        height: auto;
+        min-height: unset;
+        padding: 100px 0 60px;
+        background-size: 65%;
+        background-position: right bottom;
+      }
+    }
+
+    @media (max-width: 768px) {
+      #main-hero {
+        height: auto;
+        min-height: unset;
+        padding: 90px 0 40px;
+        background-size: 85%;
+        background-position: center bottom;
+      }
+
+      #main-hero .hero-content {
+        text-align: center !important;
+        max-width: 100% !important;
+      }
+    }
+  </style>
 
   <!-- Section 2: Dance Styles -->
   <section class="section-padding">
@@ -154,6 +196,66 @@
       </div>
     </div>
   </section>
+
+  <!-- Section 5: Weekly Classes -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="text-center fade-in-up mb-8">
+        <h2 class="text-primary">Weekly Classes</h2>
+        <p style="max-width: 600px; margin: 0 auto;">Join our vibrant community and find the perfect rhythm for your
+          journey.</p>
+      </div>
+      <div class="schedule-grid">
+        <!-- Class 1: Waltz -->
+        <div class="schedule-card fade-in-up" style="align-items: center; text-align: center;">
+          <div>
+            <div class="schedule-dance">Waltz</div>
+            <div class="schedule-time" style="justify-content: center;">
+              <i class="fa-regular fa-clock"></i>
+              Monday & Wednesday, 6:00 PM – 7:30 PM
+            </div>
+          </div>
+          <div class="schedule-level">Beginner</div>
+        </div>
+
+        <!-- Class 2: Tango -->
+        <div class="schedule-card fade-in-up" style="transition-delay: 100ms; align-items: center; text-align: center;">
+          <div>
+            <div class="schedule-dance">Tango</div>
+            <div class="schedule-time" style="justify-content: center;">
+              <i class="fa-regular fa-clock"></i>
+              Tuesday & Thursday, 7:00 PM – 8:30 PM
+            </div>
+          </div>
+          <div class="schedule-level">Intermediate</div>
+        </div>
+
+        <!-- Class 3: Foxtrot -->
+        <div class="schedule-card fade-in-up" style="transition-delay: 200ms; align-items: center; text-align: center;">
+          <div>
+            <div class="schedule-dance">Foxtrot</div>
+            <div class="schedule-time" style="justify-content: center;">
+              <i class="fa-regular fa-clock"></i>
+              Friday, 6:30 PM – 8:00 PM
+            </div>
+          </div>
+          <div class="schedule-level">Advanced</div>
+        </div>
+
+        <!-- Class 4: Quickstep -->
+        <div class="schedule-card fade-in-up" style="transition-delay: 300ms; align-items: center; text-align: center;">
+          <div>
+            <div class="schedule-dance">Quickstep</div>
+            <div class="schedule-time" style="justify-content: center;">
+              <i class="fa-regular fa-clock"></i>
+              Saturday, 11:00 AM – 12:30 PM
+            </div>
+          </div>
+          <div class="schedule-level">Beginner</div>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- Section 3: About -->
   <section class="section-padding" style="background: rgba(200, 151, 58, 0.03);">
     <div class="container">
@@ -200,7 +302,9 @@
     </div>
   </section> Why Choose Us -->
 
-  <!-- Section 5: Testimonials -->
+
+
+  <!-- Section 6: Testimonials -->
   <section class="section-padding" style="background: rgba(200, 151, 58, 0.05);">
     <div class="container">
       <div class="text-center fade-in-up mb-8">
@@ -278,7 +382,7 @@
         <div>
           <h4 class="footer-heading">Company</h4>
           <ul class="footer-links">
-            <li><a href="#">About</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="#">Careers</a></li>
             <li><a href="#">Press</a></li>
